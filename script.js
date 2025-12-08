@@ -1,6 +1,6 @@
-const addXpButton = document.querySelector('#add-xp-button');
+const addXpButton = document.querySelector('.add-xp-button');
 
-const removeXpButton = document.querySelector('#remove-xp-button');
+const removeXpButton = document.querySelector('.remove-xp-button');
 
 const progressBarFill = document.querySelector('.progress-bar-fill');
 
