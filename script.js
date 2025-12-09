@@ -31,7 +31,6 @@ addXpButton.addEventListener('click', () => {
   }
 });
 
-
 removeXpButton.addEventListener('click', () => {
    totalXp = totalXp - 10;
   xpLevel = xpLevel - 10;
