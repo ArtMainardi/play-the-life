@@ -1,15 +1,19 @@
 body {
   font-family:arial;
+  margin: 0px;
+  margin-top: 10px;
 }
 
+
 .hero-profile {
-  width: 400px;
+  width: 430px;
   border-radius: 20px;
   background-color: #FFDA97;
   box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.3);
-  padding: 10px;
-  margin: 10px;
+  padding: 15px;
+  margin: 0 auto;
 }
+
 
 /*Nome-Nível-Money*/
 .hero-header {
@@ -23,37 +27,35 @@ body {
   justify-content: space-between;
 }
 .hero-name {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
-  margin: 4px;
-  margin-left: 0px;
 }
 #hero-level {
   font-size: 14px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .hero-level-text {
   font-size: 14px;
 }
 .hero-money {
-  font-size: 14px;
+  font-size: 19px;
   color: #8E4603;
   font-weight: bold;
 }
+
 
 /*Progresso-Nível*/
 .progress-xp {
   display:flex;
   align-items:center;
-  margin: 10px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .progress-bar-background {
   width: 300px;
   height: 20px;
   background-color: #E0E0E0;
-  border-radius: 100px;
+  border-radius: 10px;
   overflow: hidden;
 }
 .progress-bar-fill {
@@ -64,29 +66,30 @@ body {
   transition: width 0.5s ease-in-out;
 }
 #total-xp {
-  font-size: 15px;
+  font-size: 14px;
   color: #016753;
   font-weight: bold;
   margin-left: 10px;
 }
 .total-xp-text {
-  font-size: 15px;
+  font-size: 14px;
   color: #016753;
   font-weight: bold;
 }
+
 
 /*Progresso-Vida*/
 .progress-hearth {
   display:flex;
   align-items:center;
-  margin: 10px;
-  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .hearth-bar-background {
   width: 300px;
   height: 20px;
   background-color: #E0E0E0;
-  border-radius: 100px;
+  border-radius: 10px;
   overflow: hidden;
 }
 .hearth-bar-fill {
@@ -97,10 +100,22 @@ body {
   transition: width 0.5s ease-in-out;
 }
 .total-hearth {
-  font-size: 15px;
+  font-size: 14px;
   color: #8E0F03;
   font-weight: bold;
   margin-left: 10px;
+}
+
+
+
+/* Buttons */
+.buttons-xp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  width: 100%;
 }
 .add-xp-button {
   width: 200px;
@@ -108,7 +123,6 @@ body {
   background-color: #2E86AB;
   color: #FFFFFF;
   font-weight: bold;
-  margin-left: 10px;
   font-size: 24px;
   text-shadow: 2px 3px 3.5px rgba(0, 0, 0, 0.5);
   border: none;
@@ -121,14 +135,12 @@ body {
   background-color: #2E86AB;
   color: #FFFFFF;
   font-weight: bold;
-  margin-left: 10px;
   font-size: 24px;
   text-shadow: 2px 3px 3.5px rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 20px;
   box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.3);
 }
-
 
 .animated-btn:before {
   height: 0%;
@@ -139,4 +151,90 @@ body {
               -4px -4px 6px 0 rgba(116, 125, 136, .5), 
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+
+/* -------------------------------------- */
+
+
+@media (max-width: 480px){
+  .hero-profile {
+    width: 88vw;
+  }
+  .hero-name {
+    font-size: 6vw;
+  }
+  #hero-level {
+    font-size: 3.2vw;
+    margin-left: 0.5vw;
+  }
+  .hero-level-text {
+    font-size: 3.2vw;
+  }
+  .hero-money {
+    font-size: 4vw;
+  }
+  
+  
+  /*Progresso-Nível*/
+  .progress-xp {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  .progress-bar-background {
+    width: 70vw;
+    height: 4.5vw;
+    border-radius: 4vw;
+  }
+  #total-xp {
+    font-size: 3vw;
+    margin-left: 2vw;
+  }
+  .total-xp-text {
+    font-size: 3vw;
+  }
+  
+  
+  /*Progresso-Vida*/
+  .progress-hearth {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  .hearth-bar-background {
+    width: 70vw;
+    height: 4.5vw;
+    border-radius: 4vw;
+  }
+  .total-hearth {
+    font-size: 3vw;
+    margin-left: 2vw;
+  }
+  
+  
+  
+/*   Buttons */
+  .buttons-xp {
+    margin-top: 4vw;
+    gap: 4vw;
+  }
+  .add-xp-button {
+    width: 45vw;
+    height: 9vw;
+    font-size: 5vw;
+    text-shadow: 2px 3px 3.5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  .remove-xp-button {
+    width: 45vw;
+    height: 9vw;
+    background-color: #2E86AB;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 5vw;
+    text-shadow: 2px 3px 3.5px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.3);
+  }
 }
