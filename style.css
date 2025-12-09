@@ -63,7 +63,7 @@ body {
   width: 0%;
   background-color: #76D7C4;
   border-radius: 100px;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 #total-xp {
   font-size: 14px;
@@ -97,7 +97,7 @@ body {
   width: 90%;
   background-color: #F44E3F;
   border-radius: 100px;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 .total-hearth {
   font-size: 14px;
