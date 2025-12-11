@@ -1,49 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<main id="hero-page" class="page">
+     <div class="hero-profile">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play the Life!</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <div class="hero-profile">
-     
-  <div class="hero-header">
-    <div class="name-level">
-      <h1 class="hero-name">Seu nome</h1>
-      <span class="hero-level-text">- Nível</span>
-      <span id="hero-level">1</span>
+    <div class="hero-header">
+      <div class="name-level">
+        <h1 class="hero-name">Seu nome</h1>
+        <span class="hero-level-text">- Nível</span>
+        <span id="hero-level">1</span>
+      </div>
+      <span class="hero-money">100 golds</span>
     </div>
-    <span class="hero-money">100 golds</span>
+
+    <div class="progress-xp">
+      <div class="progress-bar-background">
+        <div class="progress-bar-fill"></div>
+      </div>
+      <span id="total-xp">0</span>
+      <span class="total-xp-text">xp</span>
+    </div>
+
+    <div class="progress-hearth">
+      <div class="hearth-bar-background">
+        <div class="hearth-bar-fill"></div>
+      </div>
+      <span class="total-hearth">90/100</span>
+    </div>
+
   </div>
 
-  <div class="progress-xp">
-    <div class="progress-bar-background">
-      <div class="progress-bar-fill"></div>
-    </div>
-    <span id="total-xp">0</span>
-    <span class="total-xp-text">xp</span>
+  <div class="buttons-xp">
+    <button id="add-xp-button">Ganhar 10 xp!</button>
+    <button id="remove-xp-button">Tirar 10 xp!🥀💔</button>
   </div>
+</main>
 
-  <div class="progress-hearth">
-    <div class="hearth-bar-background">
-      <div class="hearth-bar-fill"></div>
-    </div>
-    <span class="total-hearth">90/100</span>
+<main id="tasks-page" class="page" style="display: none;">
+  <div class="add-task-container">
+    <h1 class="add-task-title">Criar Missão</h1>
+    <div class="add-task-options-container">
+      <input type="text" id="new-task-name"></input>
+      <select id="new-task-pillar">
+        <option value="">Selecione um Pilar</option>
+        <option value="spiritual">Espiritual</option>
+        <option value="social">Social</option>
+        <option value="physical">Físico</option>
+        <option value="intellectual">Intelectual</option>
+      </select>
+      <button id="add-task-button">Adicionar</button>
   </div>
-
 </div>
+  <div id="tasks-list"></div>
+  <div class="task-space"></div>
+</main>
 
-<div class="buttons-xp">
-  <button class="add-xp-button animated-btn">Ganhar 10 xp!</button>
-  <button class="remove-xp-button animated-btn">Tirar 10 xp!🥀💔</button>
-</div>
-    <script  src="./script.js"></script>
-
-  </body>
-  
-</html>
+<nav class="navigation-bar">
+  <button id="nav-hero-button">Herói</button>
+  <button id="nav-tasks-button">Missões</button>
+</nav>
